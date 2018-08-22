@@ -8,8 +8,11 @@ Outputs the 100 most common three-word sequences in the text, along with a count
 Usage
 -----
 The script accepts input from either stdin or as a list of arguments:
+
 `cat some-utf-8-encoded-textfile.txt | ./most_common_sequences.py`
-- OR -
+
+OR
+
 `./most_common_sequences.py some-file.txt another-file.txt`
 
 Environment
