@@ -1,28 +1,9 @@
-"""
-Outputs a list of the 100 most common three-word sequences in the text,
+
+#!/usr/bin/env python3
+
+"""Outputs a list of the 100 most common three-word sequences in the text,
 along with a count of how many times each occurred in the text. The program
-ignores punctuation, line endings, and is case insensitive.
-
-Not exactly the best code I've ever written. I literally wrote this in like an hour.
-
-EXAMPLE USAGE
-cat some-file.txt | ./most_common_sequences.py
-            - or -
-python3 most_common_sequences.py some-file.txt another-file.txt
-
-EXAMPLE OUTPUT
-Given Darwin's 'Origin of Species' (http://www.gutenberg.org/cache/epub/2009/pg2009.txt):
-$ cat origin_of_species.txt | ./most_common_sequences.py | jq .
-{
-  "of the same": "272",
-  "the same species": "118",
-  "conditions of life": "107",
-  "in the same": "97",
-  "of natural selection": "95",
-  "from each other": "89",
-  [...]
-}
-"""
+ignores punctuation, line endings, and is case insensitive."""
 
 import collections
 import nltk
