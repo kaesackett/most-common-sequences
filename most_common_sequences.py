@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 """Outputs a list of the 100 most common three-word sequences in the text,
